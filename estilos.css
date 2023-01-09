@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+
+    color: white;
+  }
+
+#banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./imgs/upscaler-20230108_134235-2x.jpg");
+    background-size: cover;
+}
+
+#contTextosPresentacion{
+    height: 100vh;
+}
+
+#contImagenPresentacion{
+    height: 100vh;
+}
+
+#contImagenPresentacion > img {
+    height: 80%;;
+    width: auto;
+}
+
+.containerSeccion{
+
+    color: white;
+}
+
+.contGeneral{
+
+    margin-bottom: 80px;
+    border: 1px solid white;
+    padding: 20px;;
+}
+
+.contMain{
+    background: rgb(0,37,56);
+    background: -moz-linear-gradient(317deg, rgba(0,37,56,1) 8%, rgba(0,55,78,1) 32%, rgba(0,36,60,1) 100%);
+    background: -webkit-linear-gradient(317deg, rgba(0,37,56,1) 8%, rgba(0,55,78,1) 32%, rgba(0,36,60,1) 100%);
+    background: linear-gradient(317deg, rgba(0,37,56,1) 8%, rgba(0,55,78,1) 32%, rgba(0,36,60,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002538",endColorstr="#00243c",GradientType=1);
+
+}
+
+.habImagen{
+    position: relative;
+}
+
+.habGraph{
+
+    text-align: center;
+}
+
+.habLogo{
+    position: absolute;
+    left: 35%;
+    top: 50px;
+}
+
+#contAcercade{
+
+}
+
+.animate__animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  .animate__fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+
+  @-webkit-keyframes fadeOutUp {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  .animate__fadeOutUp {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+  }
+
+  .navBg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
